@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vehicle Entry</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='entry.css') }}">
+</head>
+<body>
+    <h2>🚗 Upload Car Image for Entry</h2>
+    <form action="/entry" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

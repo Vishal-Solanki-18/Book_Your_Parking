@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vehicle Exit</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='exit.css') }}">
+</head>
+<body>
+    <h2>🚪 Exit Parking</h2>
+    <form action="/exit" method="post">
+        <input type="text" name="plate_number" placeholder="Enter Plate Number" required>
+        <button type="submit">Exit</button>
+    </form>
+</body>
+</html>
